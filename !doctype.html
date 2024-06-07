@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .slide {
+      display: none;
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .visible {
+      display: block;
+      opacity: 1;
+    }
+    
+    ul {
+      list-style-type: square;
+      font-size: 35px;
+    }
+    
+    h1 {
+      font-size: 50px;
+      color: darkpurple;
+      text-align: center;
+    }
+    
+    body {
+      background-color:lightblue;
+font-family: 'Inter', sans-serif;
+margin:0;
+    }
+    
+    p {
+      font-size: 30px;
+      color: white;
+      text-align: center;
+    }
+ button{ background-color: lightblue;
+border: none;
+font-family: 'Inter', sans-serif;
+font-size: 15px;
+cursor: pointer;}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="slide visible">
+    <h1 style="color:red;">Glossario</h1>
+    <h2 style="color:red; text-align:center">Ecco una lista di termini che vi serviranno per la vostra futura esperienza in questo campo</h2>
+    <img src="https://www.robertomaiolino.it/blografik/wp-content/uploads/2017/11/letter-2351442_1920-e1510492149496.jpg" width=500 height=300 hspace=500>
+  <button onclick="mostraDiapositiva(2)">Avanti &#8594;</button>
+</div>
+
+<div class="slide">
+  <h1>CONDIVISIONE:</h1>
+  <p>accesso e utilizzo contemporaneo a risorse comuni da parte di programmi o utenti diversi</p>
+  <img src="https://nicma.com/wp-content/uploads/2016/11/condivisione-dati.png" width=500 height=300 hspace=500>
+  <button onclick="mostraDiapositiva(3)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(1)">&#8592; Indietro</button>
+</div>
+
+
+<div class="slide">
+  <h1>COMPILARE:</h1>
+  <p>tradurre il codice sorgente, scritto in un linguaggio di programmazione di alto livello, in codice oggetto o target, scritto in un linguaggio di più basso livello.</p>
+  <img src="https://www.okpedia.it/data/okpedia/compilazione-processo.gif" width=500 height=250 hspace=500>
+  <button onclick="mostraDiapositiva(4)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(2)">&#8592; Indietro</button>
+</div>
+
+  
+  <div class="slide">
+  <h1>BUSINESS CASE:</h1>
+  <p>la giustificazione di progetto e comprende costi, rischi e tempistiche che servono a verificare la fattibilità continua del progetto stesso</p> <img src="https://www.microtool.de/wp-content/uploads/2023/06/business-case-EN.png" width=500 height=300  hspace=500>
+  <button onclick="mostraDiapositiva(5)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(3)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>SISTEMA INFORMATICO:</h1>
+  <p>Espressione che indica in modo generico un computer o un insieme di più computer o altri apparati elettronici (es. router ecc...), tra loro interconnessi in rete: si compone sia di elementi hardware che software.</p>
+<img src="https://1e0f971113.cbaul-cdnwnd.com/b878fbae7df5dd3484bdedbbf366dc4f/200000041-8f6d48f6d6/hard-soft.png?ph=1e0f971113" width=500 height=300 hspace =500>
+  <button onclick="mostraDiapositiva(6)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(4)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>BUSINESS PLAN:</h1>
+  <p>un documento che descrive un progetto imprenditoriale. Comprende: obiettivi, strategie, vendite, marketing e previsioni finanziarie.</p>
+<img src="https://www.buonaimpresa.it/wp-content/uploads/2019/12/business-plan-a-cosa-serve-e-come-si-pianifica.jpg" width=500 height=300 hspace=500>
+  <button onclick="mostraDiapositiva(7)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(5)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>REVENUE:</h1>
+  <p>la somma dei ricavi ottenuti da un'impresa o ditta individuale attraverso cessioni di beni e/o prestazioni di servizi, registrati ai fini IVA - per cui, quindi, è stata emessa fattura. </p>
+  <img src="https://www.direzionehotel.it/wp-content/uploads/2018/11/Software-Revenue-Management.jpg" width=500 height=300 hspace=500>
+  <button onclick="mostraDiapositiva(8)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(6)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>FATTURATO ATTIVO E PASSIVO:</h1>
+  <p>l'attivo rappresenta beni e diritti dell'impresa, mentre il passivo è la fonte di finanziamento di cui l'impresa ha bisogno per portare avanti le proprie attività.</p>
+ <img src="data:image/png;base64,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" width=500 height=250 hspace=500>
+  <button onclick="mostraDiapositiva(9)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(7)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>BILANCIO CIVILISTICO O D'ESERCIZIO:</h1>
+  <p>l'insieme dei documenti contabili che l'impresa redige per verificare la propria situazione finanziaria e patrimoniale alla fine del periodo amministrativo di riferimento.</p>
+  <img src="https://farenumeri.it/wp-content/uploads/2021/11/bilancio-civilistio.png" width=500 height=300 hspace=500>
+  <button onclick="mostraDiapositiva(10)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(8)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>TASSA E IMPOSTA</h1>
+  <p>Le tasse sono somme di denaro versate allo Stato o ad altro Ente impositore in cambio di servizi specifici. Le imposte, sono dei tributi imposti dallo Stato che non corrispondono ad alcuna prestazione specifica svolta, dallo Stato stesso, per il versamento di quella somma</p>
+ <img src="data:image/jpeg;base64,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" width=500 height=300 hspace=500>
+  <button onclick="mostraDiapositiva(11)">Avanti &#8594;</button>
+  <button onclick="mostraDiapositiva(9)">&#8592; Indietro</button>
+</div>
+
+<div class="slide">
+  <h1>CRM</h1>
+  <p>è l'acronimo di Customer Relationship Management. Con un sistema CRM puoi automatizzare e integrare i dati dei clienti e le attività rivolte ai clienti, dalle vendite al marketing, dall'assistenza all'e-commerce.</p>
+ <img src="https://www.aturtoko.id/wp-content/uploads/2023/03/PerfectView-What-is-CRM.png" hspace=550>
+  <button onclick="mostraDiapositiva(10)">&#8592; Indietro</button>
+</div>
+<script>
+  var currentSlide = 1;
+
+  function mostraDiapositiva(n) {
+    var slides = document.getElementsByClassName("slide");
+    if (n < 1) {
+      n = 1;
+    } else if (n > slides.length) {
+      n = slides.length;
+    }
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("visible");
+    }
+    slides[n - 1].classList.add("visible");
+    currentSlide = n;
+  }
+  
+  function avanti() {
+    mostraDiapositiva(currentSlide + 1);
+  }
+  
+  function indietro() {
+    mostraDiapositiva(currentSlide - 1);
+  }
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 37) {
+      indietro();
+    } else if (event.keyCode == 39 || event.keyCode == 32) { 
+      avanti();
+    }
+  });
+</script>
+
+</body>
+</html>
